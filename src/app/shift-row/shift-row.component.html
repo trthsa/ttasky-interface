@@ -1,0 +1,11 @@
+<tr class="w-full h-24">
+    <th class="flex h-full">
+        <div class="shadow-md bg-white h-24 pb-3 pr-7 border-[1px] rounded-sm">
+            <p class="py-1 pr-3 mb-2 text-white bg-green-900 rounded-br-lg">Shift {{shift?.shiftName}}</p>
+            <p class="px-2 font-semibold text-left">12:00 AM - 5:00 PM</p>
+        </div>
+    </th>
+    @for (item of DAY_CONST; track $index) {
+    <app-shift-work-task [shiftWork]="MOCK_TASKS"></app-shift-work-task>
+    }
+</tr>

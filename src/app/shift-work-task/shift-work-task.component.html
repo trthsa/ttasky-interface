@@ -1,0 +1,10 @@
+<td class="relative h-full px-3">
+    <!-- <slot /> -->
+    <div
+        class="flex flex-col justify-center min-h-20 bg-gray-100 border-[1px] rounded-sm border-gray-200 px-5 pb-10 pt-2 gap-2">
+        @for (item of shiftWork ; track $index) {
+        <app-task-cell [task]="item"></app-task-cell>
+        }
+    </div>
+    <button class="w-full h-8 text-white bg-blue-500 rounded-b">Add Task</button>
+</td>

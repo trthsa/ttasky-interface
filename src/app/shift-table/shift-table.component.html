@@ -1,0 +1,31 @@
+<div class="">
+    <table class="border-separate table-fixed border-spacing-y-3">
+        <thead>
+            <tr>
+                <th class="px-5 py-3 rounded-sm bg-emerald-400 min-w-32">
+                    <div>
+                        <p>Shift</p>
+                        <p><span class="font-light">Week </span> <span class="font-bold">1</span></p>
+                    </div>
+                </th>
+                <th class="px-5 bg-teal-600 min-w-72 max-w-72">
+                    <div>
+                        <p>Monday</p>
+                        <p class="my-2 font-normal leading-3">20/10/2012</p>
+                    </div>
+                </th>
+                <th class="px-5 bg-teal-600 min-w-72 max-w-72">Tuesday</th>
+                <th class="px-5 bg-teal-600 min-w-72 max-w-72">Wednesdays</th>
+                <th class="px-5 bg-teal-600 min-w-72 max-w-72">Thursday</th>
+                <th class="px-5 bg-teal-600 min-w-72 max-w-72">Friday</th>
+                <th class="px-5 bg-teal-600 min-w-72 max-w-72">Saturday</th>
+                <th class="px-5 bg-teal-600 min-w-72 max-w-72">Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of shiftsMock.shifts ; track item.shiftName) {
+            <app-shift-row [shift]="item" />
+            }
+        </tbody>
+    </table>
+</div>

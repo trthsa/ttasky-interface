@@ -1,0 +1,23 @@
+/* make th sticky */
+table thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+}
+
+table tbody th {
+    position: sticky;
+    left: 0;
+    top: 6rem;
+    z-index: 1;
+    background: white;
+}
+
+table thead th {
+    padding: 3px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 25vw;
+    background: white;
+}
