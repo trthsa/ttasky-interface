@@ -6,6 +6,16 @@
         </div>
     </th>
     @for (item of DAY_CONST; track $index) {
+    @if (shift?.availableOn?.[item] === true) {
     <app-shift-work-task [shiftWork]="MOCK_TASKS"></app-shift-work-task>
+    }
+    @else {
+    <td class="relative px-3">
+        <div
+            class="mx-3 absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center bg-gray-100 border-[1px] rounded-sm border-gray-200 pb-10 pt-2 gap-2 rounded-b">
+            <button class="absolute bottom-0 w-full h-8 text-white bg-blue-500 rounded-b">Add Task</button>
+        </div>
+    </td>
+    }
     }
 </tr>

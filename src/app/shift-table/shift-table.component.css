@@ -1,5 +1,4 @@
-/* make th sticky */
-table thead th:first-child {
+make th sticky table thead th:first-child {
     position: sticky;
     left: 0;
     z-index: 3;

@@ -1,4 +1,4 @@
-<div :class="{ 'opacity-35 pointer-events-none': task.disabled }"
+<div [class.opacity-35]="task?.disabled" [class.pointer-events-none]="task?.disabled"
     class="flex justify-between w-full p-3 transition-transform duration-150 bg-white rounded shadow-md cursor-pointer select-none hover:-translate-x-1 hover:-translate-y-2 min-h-10">
     <div class="w-1 bg-blue-900 min-h-10"></div>
     <div class="flex flex-col items-end flex-grow gap-2 ml-3">
