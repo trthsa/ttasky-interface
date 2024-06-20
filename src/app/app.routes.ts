@@ -26,6 +26,7 @@ export const routes: Routes = [
       {
         path: 'shift',
         component: ShiftComponent,
+        //lazy loading
       },
       {
         path: 'member',

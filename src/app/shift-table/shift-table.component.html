@@ -23,7 +23,7 @@
             </tr>
         </thead>
         <tbody>
-            @for (item of shiftsMock.shifts ; track item.shiftName) {
+            @for (item of shiftsMock.shifts ; track $index) {
             <app-shift-row [shift]="item" />
             }
         </tbody>
