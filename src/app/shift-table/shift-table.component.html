@@ -1,8 +1,8 @@
 <div class="">
     <table class="border-separate table-fixed border-spacing-y-3">
         <thead>
-            <tr>
-                <th class="px-5 py-3 rounded-sm bg-emerald-400 min-w-32">
+            <tr class="text-white">
+                <th class="px-5 py-3 rounded-sm bg-emerald-400 min-w-52 max-w-72">
                     <div>
                         <p>Shift</p>
                         <p><span class="font-light">Week </span> <span class="font-bold">1</span></p>
@@ -22,10 +22,19 @@
                 <th class="px-5 bg-teal-600 min-w-72 max-w-72">Sunday</th>
             </tr>
         </thead>
-        <tbody>
+        <!-- <tbody>
             @for (item of shiftsMock.shifts ; track $index) {
-            <app-shift-row [shift]="item" />
+            <tr class="w-full h-24">
+                <th class="flex h-full">
+                    <div class="shadow-md bg-white h-24 pb-3 pr-7 border-[1px] rounded-sm">
+                        <p class="py-1 pr-3 mb-2 text-white bg-green-900 rounded-br-lg">Shift {{$index}}</p>
+                        <p class="px-2 font-semibold text-left">12:00 AM - 5:00 PM</p>
+                    </div>
+                </th>
+                <app-shift-row [shift]="item" />
+            </tr>
             }
-        </tbody>
+        </tbody> -->
+        <tbody app-shift-table-body [shifts]="shiftsMock.shifts"></tbody>
     </table>
 </div>

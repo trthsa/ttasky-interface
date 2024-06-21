@@ -5,7 +5,7 @@ import { ShiftWorkTaskComponent } from '../shift-work-task/shift-work-task.compo
 import { TaskCellComponent } from '../task-cell/task-cell.component';
 
 @Component({
-  selector: 'app-shift-row',
+  selector: '[app-shift-row]',
   standalone: true,
   templateUrl: './shift-row.component.html',
   styleUrl: './shift-row.component.css',

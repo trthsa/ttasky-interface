@@ -1,14 +1,15 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { DAY, Shift } from '../../interface/day-time';
 import { ShiftRowComponent } from '../shift-row/shift-row.component';
+import { ShiftTableBodyComponent } from '../shift-table-body/shift-table-body.component';
 
 @Component({
   selector: 'app-shift-table',
   standalone: true,
   templateUrl: './shift-table.component.html',
   styleUrl: './shift-table.component.css',
-  imports: [ShiftRowComponent],
   encapsulation: ViewEncapsulation.None,
+  imports: [ShiftRowComponent, ShiftTableBodyComponent],
 })
 export class ShiftTableComponent {
   shiftsMock: {

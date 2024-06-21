@@ -1,0 +1,16 @@
+@for (shift of shifts ; track $index) {
+<tr class="w-full h-24">
+    <th class="flex h-full">
+        <div class="shadow-md bg-white h-24 pb-3 pr-7 border-[1px] rounded-sm">
+            <p class="py-1 pr-3 mb-2 text-white bg-green-900 rounded-br-lg">Shift {{$index}}</p>
+            <p class="px-2 font-semibold text-left">12:00 AM - 5:00 PM</p>
+        </div>
+    </th>
+    @for (item of DAY_CONST; track $index) {
+    <td class="relative h-full px-3" app-shift-row [shift]="shift"></td>
+    }
+
+
+    <!-- <app-shift-row [shift]="item" /> -->
+</tr>
+}
